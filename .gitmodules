@@ -1,0 +1,9 @@
+[submodule "projects/ddd-asserter"]
+	path = projects/ddd-asserter
+	url = https://github.com/dragee-io/ddd-asserter.git
+[submodule "projects/clean-asserter"]
+	path = projects/clean-asserter
+	url = https://github.com/dragee-io/clean-asserter.git
+[submodule "projects/ddd-grapher"]
+	path = projects/ddd-grapher
+	url = https://github.com/dragee-io/ddd-grapher.git
