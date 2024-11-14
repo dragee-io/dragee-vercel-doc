@@ -35,8 +35,5 @@
     },
     "browserslist": [
         "defaults"
-    ],
-    "engines": {
-        "node": ">=20.0"
-    }
+    ]
 }
