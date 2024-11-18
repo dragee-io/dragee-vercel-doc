@@ -3,6 +3,9 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
+        "format": "biome format --write",
+        "lint": "biome lint --write",
+        "check": "biome check --write",
         "docusaurus": "docusaurus",
         "start": "docusaurus start",
         "build": "docusaurus build",
@@ -24,6 +27,7 @@
         "@dragee-io/type": "https://github.com/dragee-io/dragee-model"
     },
     "devDependencies": {
+        "@biomejs/biome": "^1.9.0",
         "@docusaurus/module-type-aliases": "^3.6.1",
         "@docusaurus/types": "^3.6.1",
         "@types/bun": "latest",
@@ -33,7 +37,5 @@
         "typedoc-plugin-markdown": "^4.2.10",
         "typescript": "^5.5.0"
     },
-    "browserslist": [
-        "defaults"
-    ]
+    "browserslist": ["defaults"]
 }

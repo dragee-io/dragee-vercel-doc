@@ -1,0 +1,8 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+    "extends": ["./node_modules/@dragee-io/type/biome.json"],
+    "files": {
+        "ignore": ["docs/", "bower_components/", "node_modules/", "projects/"],
+        "include": ["**/*.ts", "**/*.json"]
+    }
+}
