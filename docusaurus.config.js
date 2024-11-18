@@ -42,7 +42,7 @@ const config = {
         tsconfig: './tsconfig.json',
         plugin: ['./typedoc-plugin.mjs'],
         readme: 'none',
-        out: 'docs/ddd-asserter',
+        out: 'docs/asserters/ddd-asserter',
         membersWithOwnFile: ['Class', 'Enum', 'Interface'],
         sanitizeComments: true,
         sidebar: { pretty: true },
@@ -61,7 +61,7 @@ const config = {
         tsconfig: './tsconfig.json',
         plugin: ['./typedoc-plugin.mjs'],
         readme: 'none',
-        out: 'docs/clean-asserter',
+        out: 'docs/asserters/clean-asserter',
         membersWithOwnFile: ['Class', 'Enum', 'Interface'],
         sanitizeComments: true,
         sidebar: { pretty: true },
@@ -80,7 +80,7 @@ const config = {
         tsconfig: './tsconfig.json',
         plugin: ['./typedoc-plugin.mjs'],
         readme: 'none',
-        out: 'docs/ddd-grapher',
+        out: 'docs/graphers/ddd-grapher',
         membersWithOwnFile: ['Class', 'Enum', 'Interface'],
         sanitizeComments: true,
         sidebar: { pretty: true },
@@ -113,12 +113,21 @@ const config = {
     ({
       navbar: {
         title: 'Dragee.io',
+        hideOnScroll: true,
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'mySidebar',
+            to: '/docs/asserters/clean-asserter',
+            label: 'Asserters',
             position: 'left',
-            label: 'API',
+            activeBaseRegex: `/asserters/`,
+            sidebarId: 'assertersSidebar',
+          },
+          {
+            to: '/docs/graphers/ddd-grapher',
+            label: 'Graphers',
+            position: 'left',
+            activeBaseRegex: `/graphers/`,
+            sidebarId: 'graphersSidebar',
           },
           {
             href: 'https://github.com/dragee-io',
