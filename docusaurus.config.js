@@ -32,7 +32,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  // staticDirectories: ['static'],
+  staticDirectories: ['static'],
   plugins: [
     [
       'docusaurus-plugin-typedoc',
@@ -114,6 +114,12 @@ const config = {
       navbar: {
         title: 'Dragee.io',
         hideOnScroll: true,
+        logo: {
+          alt: 'Dragee logo',
+          src: 'img/dragee_logo.svg',
+          width: 32,
+          height: 32,
+        },
         items: [
           {
             to: '/docs/asserters/clean-asserter',
