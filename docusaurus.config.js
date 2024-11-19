@@ -146,14 +146,18 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Links',
+            title: 'About HoppR',
             items: [
               {
-                label: 'Blog HoppR',
+                label: 'Website',
+                href: 'https://www.hoppr.tech/',
+              },
+              {
+                label: 'Blog',
                 href: 'https://blog.hoppr.tech/',
               },
               {
-                label: 'LinkedIn HoppR',
+                label: 'LinkedIn',
                 href: 'https://fr.linkedin.com/company/hopprtech',
               }
             ],
