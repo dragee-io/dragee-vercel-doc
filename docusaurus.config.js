@@ -34,6 +34,7 @@ const config = {
     },
     staticDirectories: ['static'],
     plugins: [
+        // DDD asserter docs
         [
             'docusaurus-plugin-typedoc',
             {
@@ -53,6 +54,7 @@ const config = {
                 useCodeBlocks: true
             }
         ],
+        // Clean asserter docs
         [
             'docusaurus-plugin-typedoc',
             {
@@ -72,6 +74,7 @@ const config = {
                 useCodeBlocks: true
             }
         ],
+        // DDD grapher docs
         [
             'docusaurus-plugin-typedoc',
             {
@@ -90,7 +93,9 @@ const config = {
                 },
                 useCodeBlocks: true
             }
-        ]
+        ],
+        // Search Bar
+        ['@cmfcmf/docusaurus-search-local', {}]
     ],
 
     presets: [
