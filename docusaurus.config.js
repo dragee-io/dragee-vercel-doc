@@ -116,7 +116,7 @@ const config = {
         hideOnScroll: true,
         logo: {
           alt: 'Dragee logo',
-          src: 'img/dragee_logo.svg',
+          src: 'img/dragee_logo.png',
           width: 32,
           height: 32,
         },
