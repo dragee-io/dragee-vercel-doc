@@ -3,6 +3,6 @@
     "extends": ["./node_modules/@dragee-io/type/biome.json"],
     "files": {
         "ignore": ["docs/", "bower_components/", "node_modules/", "projects/"],
-        "include": ["**/*.ts", "**/*.json"]
+        "include": ["**/*.ts", "**/*.js", "**/*.json", "**/*.css", "**/*.html"]
     }
 }
