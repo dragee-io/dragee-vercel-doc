@@ -148,8 +148,9 @@ const config = {
                     },
                     {
                         href: 'https://github.com/dragee-io',
-                        label: 'GitHub',
-                        position: 'right'
+                        position: 'right',
+                        className: 'header-github-link',
+                        'aria-label': 'GitHub repository',
                     }
                 ]
             },
