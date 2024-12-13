@@ -116,6 +116,12 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            announcementBar: {
+                id: `announcementBar-drageeBuilding`,
+                content: `🚧 Dragee is Buiding... - ⭐️ If you like Dragee, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dragee-io/dragee-cli">GitHub</a>`,
+                // id: `announcementBar-v${announcedVersion}`,
+                // content: `🎉️ <b><a target="_blank" href="">Dragee v${announcedVersion}</a> is out!</b> 🥳️`,
+            },
             navbar: {
                 title: 'Dragee.io',
                 hideOnScroll: true,
