@@ -1,8 +1,19 @@
 .heroBanner {
-    padding: 4rem 0;
+    background-color: #2b3137;
+    padding: 4rem;
     text-align: center;
     position: relative;
     overflow: hidden;
+}
+
+.heroBannerTitle {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.heroBannerSubtitle {
+  color: rgb(209, 213, 219);
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 996px) {
@@ -11,11 +22,3 @@
     }
 }
 
-.buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.buttons > a {
-    margin: 0 0.5rem;
-}

@@ -1,37 +1,21 @@
-import Link from '@docusaurus/Link';
-import clsx from 'clsx';
 import PropTypes from 'prop-types';
 
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
-export default function HomepageHeader({ title, tagline }) {
+export default function HomepageHeader({ title, subtitle }) {
     return (
-        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <header className={styles.heroBanner}>
             <div className="container">
-                <Heading as="h1" className="hero__title">
+                <Heading as="h1" className={styles.heroBannerTitle}>
                     {title}
                 </Heading>
-                <p className="hero__subtitle">{tagline}</p>
-                <div className={styles.buttons}>
-                    <Link
-                        className="button button--secondary button--lg"
-                        to="/docs/asserters/clean-asserter"
-                    >
-                        Asserters
-                    </Link>
-                    <Link
-                        className="button button--secondary button--lg"
-                        to="/docs/graphers/ddd-grapher"
-                    >
-                        Graphers
-                    </Link>
-                </div>
+                <p className={styles.heroBannerSubtitle}>{subtitle}</p>
             </div>
         </header>
     );
 }
 HomepageHeader.propTypes = {
     title: PropTypes.string.isRequired,
-    tagline: PropTypes.string.isRequired
+    subtitle: PropTypes.string.isRequired,
 };

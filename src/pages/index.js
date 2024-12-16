@@ -10,7 +10,7 @@ export default function Home() {
             title={`${siteConfig.title} - ${siteConfig.tagline}`}
             description={`${siteConfig.title} - ${siteConfig.tagline}`}
         >
-            <HomepageHeader title={siteConfig.title} tagline={siteConfig.tagline} />
+            <HomepageHeader title={siteConfig.tagline} subtitle={siteConfig.customFields.subline} />
             <main>
                 <HomepageFeatures />
             </main>
