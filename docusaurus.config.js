@@ -4,8 +4,6 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import { themes as prismThemes } from 'prism-react-renderer';
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Dragee.io',
@@ -175,11 +173,7 @@ const config = {
                         ]
                     }
                 ],
-                copyright: 'Built with Docusaurus.'
-            },
-            prism: {
-                theme: prismThemes.github,
-                darkTheme: prismThemes.dracula
+                copyright: 'Dragee is built with ❤️☕ by HoppR, crafters building tools for crafters. Website built with Docusaurus.'
             }
         })
 };
