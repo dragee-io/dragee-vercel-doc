@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
+import Heading from '@theme/Heading';
+
 import styles from './styles.module.css';
 
 const FeatureList = [
@@ -30,6 +32,28 @@ const FeatureList = [
         )
     },
     {
+        title: 'Analyze with asserters',
+        id: 'asserters',
+        description: (
+            <>
+                Dragee <b>Asserters</b> contain a set of architectural rules.
+                <br />
+                Your project's compliance to these rules is analyzed, so you can avoid the <i>big ball of mud</i> and other anti-patterns.
+            </>
+        )
+    },
+    {
+        title: 'Design with graphers',
+        id: 'graphers',
+        description: (
+            <>
+                Dragee <b>Graphers</b> can design your architecture.
+                <br />
+                Nowadays, it is essential to take a look to your software achitecture from another perspective. Let Dragee draw your project's portrait !
+            </>
+        )
+    },
+    {
         title: 'Made by HoppR',
         id: 'hoppr',
         description: (
@@ -45,16 +69,12 @@ const FeatureList = [
 
 function Feature({ id, title, description }) {
     return (
-        <div className={clsx('col col--4 margin-vert--lg', styles.feature)}>
-            <div id={id} className="card">
-                <div className="card__header">
+        <div id={id} className="card">
+            <div className="card__header">
                 <h3>{title}</h3>
-                </div>
-                <div className="card__body">
-                <p>
-                    {description}
-                </p>
-                </div>
+            </div>
+            <div className="card__body">
+                <p>{description}</p>
             </div>
         </div>
     );
@@ -66,12 +86,24 @@ Feature.propTypes = {
 };
 
 export default function HomepageFeatures() {
+    const featureColumns = [[], [], []];
+    FeatureList.forEach((feature, i) =>
+      featureColumns[i % 3].push(feature),
+    );
+  
     return (
         <section className={styles.features}>
             <div className="container">
-                <div className="row">
-                    {FeatureList.map(props => (
-                        <Feature key={props.id} {...props} />
+                <Heading as="h2" className={clsx('margin-top--xl', 'text--center')}>
+                    Dragee, your solution for clean software design
+                </Heading>               
+                <div className={clsx('row', styles.featuresSection)}>
+                    {featureColumns.map((featureItems, i) => (
+                        <div className={clsx('col col--4', styles.feature)} key={`feature-col-${i}`}>
+                            {featureItems.map(props => (
+                                <Feature key={props.id} {...props} />
+                            ))}
+                        </div>
                     ))}
                 </div>
             </div>

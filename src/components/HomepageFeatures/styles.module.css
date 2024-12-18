@@ -19,3 +19,23 @@
     border: 2px solid rgb(131, 24, 67, 0.7);
     --ifm-card-background-color: rgba(131, 24, 67, 0.1);
 }
+
+.featuresSection {
+    margin: 4rem 0;
+}
+
+.featuresSection > :global(.col) > * {
+    margin-bottom: 2rem;
+}
+  
+@media (max-width: 996px) {
+    .featuresSection > :global(.col:last-child) > *:last-child {
+        margin-bottom: 0;
+    }
+}
+  
+@media (min-width: 997px) {
+    .featuresSection > :global(.col) > *:last-child {
+      margin-bottom: 0;
+    }
+}
