@@ -7,7 +7,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Dragee.io',
-    tagline: 'Analyse and secure your software architecture',
+    tagline: 'Analyze and secure your software architecture',
     
     customFields: {
         subline: 'Don\'t let poor architecture design ruin your project. Dragee is your solution for building modern software architecture'
