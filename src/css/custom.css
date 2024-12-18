@@ -59,6 +59,10 @@ div[class^='announcementBar_'] {
       var(--ifm-transition-timing-default);
 }
 
+.header-github-link:hover::before {
+  background-color: var(--ifm-navbar-link-hover-color);
+}
+
 .footer--dark {
   --ifm-footer-background-color: #2b3137;
 }
