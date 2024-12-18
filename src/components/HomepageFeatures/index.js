@@ -1,4 +1,3 @@
-import Heading from '@theme/Heading';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import styles from './styles.module.css';
@@ -7,7 +6,6 @@ const FeatureList = [
     {
         title: 'Dragee for software architecture',
         id: 'dragee',
-        src: require('@site/static/img/dragee_logo.png').default,
         description: (
             <>
                 Automated generation of software architecture documentation from application source
@@ -21,7 +19,6 @@ const FeatureList = [
     {
         title: 'Open-source & adaptable',
         id: 'tech',
-        src: require('@site/static/img/tech_img.jpg').default,
         description: (
             <>
                 Dragee is based on Bun with TypeScript, for speed and simplicity.
@@ -35,7 +32,6 @@ const FeatureList = [
     {
         title: 'Made by HoppR',
         id: 'hoppr',
-        src: require('@site/static/img/hoppr_logo.jpg').default,
         description: (
             <>
                 <i>There is a new Hopp(R) for Tech consulting</i>
@@ -47,21 +43,24 @@ const FeatureList = [
     }
 ];
 
-function Feature({ src, title, description }) {
+function Feature({ id, title, description }) {
     return (
-        <div className={clsx('col col--4')}>
-            <div className="text--center">
-                <img className={styles.featureImg} src={src} alt={title} />
-            </div>
-            <div className="text--center padding-horiz--md">
-                <Heading as="h3">{title}</Heading>
-                <p>{description}</p>
+        <div className={clsx('col col--4 margin-vert--lg', styles.feature)}>
+            <div id={id} className="card">
+                <div className="card__header">
+                <h3>{title}</h3>
+                </div>
+                <div className="card__body">
+                <p>
+                    {description}
+                </p>
+                </div>
             </div>
         </div>
     );
 }
 Feature.propTypes = {
-    src: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired
 };
