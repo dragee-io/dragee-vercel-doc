@@ -82,7 +82,7 @@ function Feature({ id, title, description }) {
 Feature.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
+    description: PropTypes.node.isRequired
 };
 
 export default function HomepageFeatures() {
