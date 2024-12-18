@@ -1,23 +1,23 @@
 [data-theme='dark'] .feature > * {
-    border: 2px solid #3b3e4f;
+    border: 2px solid rgb(from var(--ifm-color-primary-lighter) r g b / 0.1);
 }
 
 [data-theme='light'] .feature > * {
-    border: 2px solid #3b3e4f32;
+    border: 2px solid rgb(from var(--ifm-color-primary-lighter) r g b / 0.1);
     color: #2b3137;
-    --ifm-card-background-color: #3b3e4f07;
+    --ifm-card-background-color: rgb(from var(--ifm-color-primary-lightest) r g b / 0.05);
 }
 
 [data-theme='dark'] .feature > *:hover {
     color: white;
-    border: 2px solid rgb(131, 24, 67, 0.7);
-    --ifm-card-background-color: rgba(131, 24, 67, 0.1);
+    border: 2px solid rgb(from var(--ifm-color-primary-lighter) r g b / 0.7);
+    --ifm-card-background-color: rgb(from var(--ifm-color-primary-lighter) r g b / 0.15);
 }
   
 [data-theme='light'] .feature > *:hover {
     color: black;
-    border: 2px solid rgb(131, 24, 67, 0.7);
-    --ifm-card-background-color: rgba(131, 24, 67, 0.1);
+    border: 2px solid rgb(from var(--ifm-color-primary-lighter) r g b / 0.6);
+    --ifm-card-background-color: rgb(from var(--ifm-color-primary-lighter) r g b / 0.1);
 }
 
 .featuresSection {
