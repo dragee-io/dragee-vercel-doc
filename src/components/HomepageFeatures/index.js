@@ -94,7 +94,7 @@ export default function HomepageFeatures() {
     return (
         <section className={styles.features}>
             <div className="container">
-                <Heading as="h2" className={clsx('margin-top--xl', 'text--center')}>
+                <Heading as="h1" className={styles.featureHeadline}>
                     Dragee, your solution for clean software design
                 </Heading>               
                 <div className={clsx('row', styles.featuresSection)}>

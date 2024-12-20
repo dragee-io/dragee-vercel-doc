@@ -39,3 +39,18 @@
       margin-bottom: 0;
     }
 }
+
+.featureHeadline {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+[data-theme='dark'] .featureHeadline {
+    color: var(--ifm-color-primary);
+    text-shadow: 2px 2px 0 var(--ifm-color-primary-darkest);
+}
+
+[data-theme='light'] .featureHeadline {
+    color: var(--ifm-color-primary-dark);
+    text-shadow: 2px 2px 0 var(--ifm-color-primary-lightest);
+}
