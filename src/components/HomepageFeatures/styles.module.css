@@ -64,7 +64,6 @@
 }
 
 .featureList {
-    list-style: '👉 ';
-    list-style-position: outside;
+    list-style: outside '👉 ';
     margin-top: 1rem;
 }
