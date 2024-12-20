@@ -102,9 +102,9 @@ export default function HomepageFeatures() {
                         Dragee is the ultimate tool for software architects and craft developers seeking clarity and precision in their work. Designed from scratch with usability at its core, it has three major design goals:
                     </p>
                     <ul className={styles.featureList}>
-                        <li>Effortless Usability: Built to be intuitive and accessible for all</li>
-                        <li>Automated Documentation: Generate detailed architecture artifacts like C4 models with ease</li>
-                        <li>In-Depth Analysis: Meticulously analyze your projects - whether new or legacy - and ensure your architecture aligns with your vision</li>
+                        <li><b>Effortless Usability:</b> Built to be intuitive and accessible for all</li>
+                        <li><b>Automated Documentation:</b> Generate detailed architecture artifacts like C4 models with ease</li>
+                        <li><b>In-Depth Analysis:</b> Meticulously analyze your projects - whether new or legacy - and ensure your architecture aligns with your vision</li>
                     </ul>
                     <p>
                         With Dragee, you can create, document, and refine your software architecture seamlessly, empowering you to build your projects as they should be.
