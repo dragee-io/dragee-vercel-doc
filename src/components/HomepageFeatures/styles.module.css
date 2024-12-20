@@ -55,3 +55,16 @@
     color: var(--ifm-color-primary-dark);
     text-shadow: 2px 2px 0 var(--ifm-color-primary-lightest);
 }
+
+.featureSubline {
+    font-size: larger;
+    max-width: 50vw;
+    margin: 3rem auto 0 auto;
+    line-height: 2;
+}
+
+.featureList {
+    list-style: '👉 ';
+    list-style-position: outside;
+    margin-top: 1rem;
+}
