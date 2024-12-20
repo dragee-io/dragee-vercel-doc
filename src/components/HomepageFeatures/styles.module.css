@@ -43,6 +43,7 @@
 .featureHeadline {
     margin-top: 4rem;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 [data-theme='dark'] .featureHeadline {
