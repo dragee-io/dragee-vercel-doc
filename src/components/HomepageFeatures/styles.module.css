@@ -64,6 +64,14 @@
 }
 
 .featureList {
-    list-style: outside '👉 ';
+    list-style: outside;
     margin-top: 1rem;
+}
+
+.featureList li {
+    padding-left: 2rem;
+}
+
+.featureList li::marker {
+    content: '👉';
 }
