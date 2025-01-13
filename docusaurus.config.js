@@ -4,12 +4,14 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import { themes as prismThemes } from 'prism-react-renderer';
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Dragee.io',
-    tagline: 'Software architecture analysis and modeling',
+    tagline: 'Analyze and secure your software architecture',
+    
+    customFields: {
+        subline: 'Don\'t let poor architecture design ruin your project. Dragee is your solution for building modern software architecture'
+    },
 
     // Set the production url of your site here
     url: 'https://dragee.io',
@@ -116,6 +118,12 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            announcementBar: {
+                id: `announcementBar-drageeBuilding`,
+                content: `🚧 Dragee is building... - ⭐️ If you like Dragee, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dragee-io/dragee-cli">GitHub</a>`,
+                // id: `announcementBar-v${announcedVersion}`,
+                // content: `🎉️ <b><a target="_blank" href="">Dragee v${announcedVersion}</a> is out!</b> 🥳️`,
+            },
             navbar: {
                 title: 'Dragee.io',
                 hideOnScroll: true,
@@ -142,8 +150,9 @@ const config = {
                     },
                     {
                         href: 'https://github.com/dragee-io',
-                        label: 'GitHub',
-                        position: 'right'
+                        position: 'right',
+                        className: 'header-github-link',
+                        'aria-label': 'GitHub repository',
                     }
                 ]
             },
@@ -168,11 +177,7 @@ const config = {
                         ]
                     }
                 ],
-                copyright: 'Built with Docusaurus.'
-            },
-            prism: {
-                theme: prismThemes.github,
-                darkTheme: prismThemes.dracula
+                copyright: 'Dragee is built with ❤️☕ by HoppR, crafters building tools for crafters. Website built with Docusaurus.'
             }
         })
 };

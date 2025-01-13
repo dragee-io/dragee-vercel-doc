@@ -1,13 +1,13 @@
-import Heading from '@theme/Heading';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
+import Heading from '@theme/Heading';
+
 import styles from './styles.module.css';
 
 const FeatureList = [
     {
         title: 'Dragee for software architecture',
         id: 'dragee',
-        src: require('@site/static/img/dragee_logo.png').default,
         description: (
             <>
                 Automated generation of software architecture documentation from application source
@@ -21,7 +21,6 @@ const FeatureList = [
     {
         title: 'Open-source & adaptable',
         id: 'tech',
-        src: require('@site/static/img/tech_img.jpg').default,
         description: (
             <>
                 Dragee is based on Bun with TypeScript, for speed and simplicity.
@@ -33,9 +32,30 @@ const FeatureList = [
         )
     },
     {
+        title: 'Analyze with asserters',
+        id: 'asserters',
+        description: (
+            <>
+                Dragee <b>Asserters</b> contain a set of architectural rules.
+                <br />
+                Your project's compliance to these rules is analyzed, so you can avoid the <i>big ball of mud</i> and other anti-patterns.
+            </>
+        )
+    },
+    {
+        title: 'Design with graphers',
+        id: 'graphers',
+        description: (
+            <>
+                Dragee <b>Graphers</b> can design your architecture.
+                <br />
+                Nowadays, it is essential to take a look to your software achitecture from another perspective. Let Dragee draw your project's portrait !
+            </>
+        )
+    },
+    {
         title: 'Made by HoppR',
         id: 'hoppr',
-        src: require('@site/static/img/hoppr_logo.jpg').default,
         description: (
             <>
                 <i>There is a new Hopp(R) for Tech consulting</i>
@@ -47,32 +67,56 @@ const FeatureList = [
     }
 ];
 
-function Feature({ src, title, description }) {
+function Feature({ id, title, description }) {
     return (
-        <div className={clsx('col col--4')}>
-            <div className="text--center">
-                <img className={styles.featureImg} src={src} alt={title} />
+        <div id={id} className="card">
+            <div className="card__header">
+                <h3>{title}</h3>
             </div>
-            <div className="text--center padding-horiz--md">
-                <Heading as="h3">{title}</Heading>
+            <div className="card__body">
                 <p>{description}</p>
             </div>
         </div>
     );
 }
 Feature.propTypes = {
-    src: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
+    description: PropTypes.node.isRequired
 };
 
 export default function HomepageFeatures() {
+    const featureColumns = [[], [], []];
+    FeatureList.forEach((feature, i) =>
+      featureColumns[i % 3].push(feature),
+    );
+  
     return (
         <section className={styles.features}>
             <div className="container">
-                <div className="row">
-                    {FeatureList.map(props => (
-                        <Feature key={props.id} {...props} />
+                <Heading as="h1" className={styles.featureHeadline}>
+                    Dragee: your solution for clean software design
+                </Heading>
+                <div className={styles.featureSubline}>
+                    <p>
+                        Dragee is the ultimate tool for software architects and craft developers seeking clarity and precision in their work. Designed from scratch with usability at its core, it has three major design goals:
+                    </p>
+                    <ul className={styles.featureList}>
+                        <li><b>Effortless Usability:</b> Built to be intuitive and accessible for all</li>
+                        <li><b>Automated Documentation:</b> Generate detailed architecture artifacts like C4 models with ease</li>
+                        <li><b>In-Depth Analysis:</b> Meticulously analyze your projects - whether new or legacy - and ensure your architecture aligns with your vision</li>
+                    </ul>
+                    <p>
+                        With Dragee, you can create, document, and refine your software architecture seamlessly, empowering you to build your projects as they should be.
+                    </p>
+                </div>       
+                <div className={clsx('row', styles.featuresSection)}>
+                    {featureColumns.map((featureItems, i) => (
+                        <div className={clsx('col col--4', styles.feature)} key={`feature-col-${i}`}>
+                            {featureItems.map(props => (
+                                <Feature key={props.id} {...props} />
+                            ))}
+                        </div>
                     ))}
                 </div>
             </div>
