@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.assertersSidebar.category.Clean Asserter": {
+    "message": "Clean Asserter",
+    "description": "The label for category Clean Asserter in sidebar assertersSidebar"
+  },
+  "sidebar.assertersSidebar.category.DDD Asserter": {
+    "message": "DDD Asserter",
+    "description": "The label for category DDD Asserter in sidebar assertersSidebar"
+  },
+  "sidebar.graphersSidebar.category.DDD Grapher": {
+    "message": "DDD Grapher",
+    "description": "The label for category DDD Grapher in sidebar graphersSidebar"
+  }
+}

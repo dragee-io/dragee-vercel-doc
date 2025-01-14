@@ -1,0 +1,22 @@
+{
+  "link.title.About HoppR": {
+    "message": "About HoppR",
+    "description": "The title of the footer links column with title=About HoppR in the footer"
+  },
+  "link.item.label.Website": {
+    "message": "Website",
+    "description": "The label of footer link with label=Website linking to https://www.hoppr.tech/"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to https://blog.hoppr.tech/"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://fr.linkedin.com/company/hopprtech"
+  },
+  "copyright": {
+    "message": "Dragee is built with ❤️☕ by HoppR, crafters building tools for crafters. Website built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
