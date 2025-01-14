@@ -42,7 +42,7 @@ const config = {
             {
                 id: 'ddd-asserter',
                 entryPoints: ['./projects/ddd-asserter/src/rules/**'],
-                tsconfig: './tsconfig.json',
+                tsconfig: './projects/ddd-asserter/tsconfig.json',
                 plugin: ['./typedoc-plugin.mjs'],
                 readme: 'none',
                 out: 'docs/asserters/ddd-asserter',
@@ -62,7 +62,7 @@ const config = {
             {
                 id: 'clean-asserter',
                 entryPoints: ['./projects/clean-asserter/src/rules/**'],
-                tsconfig: './tsconfig.json',
+                tsconfig: './projects/clean-asserter/tsconfig.json',
                 plugin: ['./typedoc-plugin.mjs'],
                 readme: 'none',
                 out: 'docs/asserters/clean-asserter',
@@ -82,7 +82,7 @@ const config = {
             {
                 id: 'ddd-grapher',
                 entryPoints: ['./projects/ddd-grapher/src/graphs/**'],
-                tsconfig: './tsconfig.json',
+                tsconfig: './projects/ddd-grapher/tsconfig.json',
                 plugin: ['./typedoc-plugin.mjs'],
                 readme: 'none',
                 out: 'docs/graphers/ddd-grapher',
