@@ -8,9 +8,10 @@
 const config = {
     title: 'Dragee.io',
     tagline: 'Analyze and secure your software architecture',
-    
+
     customFields: {
-        subline: 'Don\'t let poor architecture design ruin your project. Dragee is your solution for building modern software architecture'
+        subline:
+            "Don't let poor architecture design ruin your project. Dragee is your solution for building modern software architecture"
     },
 
     // Set the production url of your site here
@@ -120,7 +121,7 @@ const config = {
         ({
             announcementBar: {
                 id: `announcementBar-drageeBuilding`,
-                content: `🚧 Dragee is building... - ⭐️ If you like Dragee, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dragee-io/dragee-cli">GitHub</a>`,
+                content: `🚧 Dragee is building... - ⭐️ If you like Dragee, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dragee-io/dragee-cli">GitHub</a>`
                 // id: `announcementBar-v${announcedVersion}`,
                 // content: `🎉️ <b><a target="_blank" href="">Dragee v${announcedVersion}</a> is out!</b> 🥳️`,
             },
@@ -152,7 +153,7 @@ const config = {
                         href: 'https://github.com/dragee-io',
                         position: 'right',
                         className: 'header-github-link',
-                        'aria-label': 'GitHub repository',
+                        'aria-label': 'GitHub repository'
                     }
                 ]
             },
@@ -177,7 +178,7 @@ const config = {
                         ]
                     }
                 ],
-                copyright: 'Dragee is built with ❤️☕ by HoppR, crafters building tools for crafters. Website built with Docusaurus.'
+                copyright: `Built with ❤️ + ☕ by HoppR. Crafters building tools for crafters. Learn more <a href="https://www.hoppr.tech/?utm_source=dragee" target="_blank" aria-label="Learn more about HoppR">about us</a>.`
             }
         })
 };

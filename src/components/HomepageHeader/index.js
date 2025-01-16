@@ -17,5 +17,5 @@ export default function HomepageHeader({ title, subtitle }) {
 }
 HomepageHeader.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired
 };
